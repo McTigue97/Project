@@ -2,12 +2,55 @@
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>The Countdown</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+<meta name="description" content="">
+
+<link href="css/addtohomescreen.min.css" rel="stylesheet">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="TCD">
+<meta name="apple-mobile-web-app-title" content="TCD">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<link rel="apple-touch-icon" href="meta/ios/ios-appicon-120-120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="meta/ios/ios-appicon-152-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="meta/ios/ios-appicon-180-180.png">
+<link rel="apple-touch-icon" sizes="120x120" href="meta/ios/ios-appicon-120-120.png">
+<link href="meta/ios/apple-touch-startup-image-320x460.png" media="(device-width: 320px)"
+    rel="apple-touch-startup-image">
+<!-- iPhone (Retina) SPLASHSCREEN-->
+<link href="meta/ios/apple-touch-startup-image-640x920.png"
+    media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- iPad (portrait) SPLASHSCREEN-->
+<link href="meta/ios/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)"
+    rel="apple-touch-startup-image">
+<!-- iPad (landscape) SPLASHSCREEN-->
+<link href="meta/ios/apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (orientation: landscape)"
+    rel="apple-touch-startup-image">
+<!-- iPad (Retina, portrait) SPLASHSCREEN-->
+<link href="meta/ios/apple-touch-startup-image-1536x2008.png"
+    media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
+    rel="apple-touch-startup-image">
+<!-- iPad (Retina, landscape) SPLASHSCREEN-->
+<link href="meta/ios/apple-touch-startup-image-2048x1496.png"
+    media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+    rel="apple-touch-startup-image">
+<!-- iPhone 6/7/8 -->
+<link href="/meta/ios/apple-touch-startup-image-750x1334.png"
+    media="(device-width: 375px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<!-- iPhone 6 Plus/7 Plus/8 Plus -->
+<link href="/meta/ios/apple-touch-startup-image-1242x2208.png"
+    media="(device-width: 414px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+
+<meta name="msapplication-starturl" content="/?utm_source=homescreen">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Favicons -->
   <link href="Img/clock.png" rel="icon">
@@ -27,9 +70,27 @@
 
 
   <link href="assets/css/style.css" rel="stylesheet">
-
+	<link rel="manifest" href="manifest.json">
+	<meta name="generator" content="PWA Starter">
 
 </head>
+	 <style>
+#status{
+	background-color: black;
+}
+#header2{
+	height: 50px;
+	font-weight: bold;
+}
+table, th, td {
+  border: 2px solid #ffc451;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+</style>
 
 <body>
 
@@ -40,11 +101,12 @@
 
       <!-- Uncomment below if you prefer to use an image logo -->
 		
-		                <a href="#" class="pull-left"><img src="Logo/logo.gif" width="150" height="120"></a> 
+	  <a href="#" class="pull-left"><img src="logo.gif" width="150" height="120" alt="Logo"></a> 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Pubs</a></li>
+          <li><a class="nav-link scrollto" href="#covid">Covid News</a></li>
           <li><a class="nav-link scrollto" href="#services">Deals</a></li>
           </li>
         </ul>
@@ -75,7 +137,7 @@
 
 <script>
 
-var countDownDate = new Date("April 6, 2021 00:00:01").getTime();
+var countDownDate = new Date("May 31, 2021 00:00:01").getTime();
 
 var x = setInterval(function() {
 
@@ -111,28 +173,169 @@ var x = setInterval(function() {
     <!-- ======= Pubs Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
+   <h1 style="text-align:center;"><b>Pubs</b></h1>
+   <p class="font-italic" style="text-align:center;">
+   <h3 style="text-align:center;">Don't know where to go when the restrictions end? Try these pubs below and you will not be disappointed!</h3>
+    </p>
 
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-			<img src="assets/img/about.jpg" class="img-fluid" alt="">
-			<img src="assets/img/about.jpg" class="img-fluid" alt="">
-			<img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>Pubs</h3>
-            <p class="font-italic">
-              Pub text will go here
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> The Skeff</li>
-              <li><i class="ri-check-double-line"></i> Hole in the Wall</li>
-              <li><i class="ri-check-double-line"></i> Crust Bucket</li>
-            </ul>
+<section id="ts">
+  <div class="fluid-container">
+    <div class="row no-gutters">
+      <div class="col-md">
+        <div class="menu-image h-100 d-flex align-items-start">
+          <img src="assets/img/skeff/The_Skeff.jpg" class="img-fluid" alt="menu image">
+        </div>
+      </div>  
+
+      <div class="col-md">
+        <div class="menu-text flex-grow-1 py-4 px-5">
+		<i class="ri-check-double-line"></i><h2 class="main-title text-left">The Skeff</h2>
+          <hr class="hr-style-left" />
+          <div class="menu-content d-flex justify-content-between">
+            <p>Just beside Eyre Square, The Skeff Bar is one of Galway's most popular pubs. The Skeff has been around since 1850 and offer the finest pints, cocktails and whiskeys from all over the world. With live music seven nights a week The Skeff is a must visit establishment. Come see the unique interior of the pub and sample some of their finest food the kicthen provide. Make sure that the Skeff is your first stop.</p>
           </div>
         </div>
-
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="map1">
+  <div class="fluid-container">
+    <div class="row no-gutters">
+      <div class="col-md">
+        <div class="menu-image h-100 d-flex align-items-start">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9543.443338484862!2d-9.0500584!3d53.2741131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe64769fde7ae091c!2sThe%20Skeff%20Bar!5e0!3m2!1sen!2sie!4v1615481686378!5m2!1sen!2sie" width="545" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="menu-text flex-grow-1 py-4 px-5">
+          <h3 class="main-title text-left">How can I find the Skeff?</h3>
+          <hr class="hr-style-left" />
+          <div class="menu-content d-flex justify-content-between">
+            <p>Simply click directions on the map, this will bring you to Google Maps, from there all you need to do is follow the directions and you will be on your way to a good night in The Skeff.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section id="anp">
+  <div class="fluid-container">
+    <div class="row no-gutters">
+      <div class="col-md">
+        <div class="menu-image h-100 d-flex align-items-start">
+          <img src="assets/img//pucan/an-pucan.jpg" class="img-fluid" alt="menu image">
+        </div>
+      </div>  
+
+      <div class="col-md">
+        <div class="menu-text flex-grow-1 py-4 px-5">
+		<i class="ri-check-double-line"></i><h2 class="main-title text-left">An Púcán</h2>
+          <hr class="hr-style-left" />
+          <div class="menu-content d-flex justify-content-between">
+            <p>An Púcán, just a 2 minute walk from Eyre Square is a very popular pub among the locals and students alike. Some of Galway's best live music acts can be found every evening at An Púcán with local music acts performing in the front bar, followed by exciting line ups for the stage in the back bar to keep the momentum going throughout the night. With multiple Television's in the back bar, An Púcán is the pub to go to during a Champions League night or a Premier League weekend. Come to An Púcán and have a bite to eat, a pint, and the bit of craic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="map2">
+  <div class="fluid-container">
+    <div class="row no-gutters">
+      <div class="col-md">
+        <div class="menu-image h-100 d-flex align-items-start">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9543.354081762995!2d-9.0474341!3d53.2745129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe997eacdc6802bef!2zQW4gUMO6Y8Ohbg!5e0!3m2!1sen!2sie!4v1615482912191!5m2!1sen!2sie" width="545" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="menu-text flex-grow-1 py-4 px-5">
+          <h3 class="main-title text-left">How can I find An Púcán?</h3>
+          <hr class="hr-style-left" />
+          <div class="menu-content d-flex justify-content-between">
+            <p>Simply click directions on the map, this will bring you to Google Maps, from there all you need to do is follow the directions and you will be on your way to a good night in An Púcán.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="thitw">
+  <div class="fluid-container">
+    <div class="row no-gutters">
+      <div class="col-md">
+        <div class="menu-image h-100 d-flex align-items-start">
+          <img src="assets/img/wall/hole_in_wall.jpg" class="img-fluid" alt="menu image">
+        </div>
+      </div>  
+
+      <div class="col-md">
+        <div class="menu-text flex-grow-1 py-4 px-5">
+		<i class="ri-check-double-line"></i><h2 class="main-title text-left">The Hole In The Wall</h2>
+          <hr class="hr-style-left" />
+          <div class="menu-content d-flex justify-content-between">
+            <p>The Hole In The Wall, is a hidden gem in Galway. The Hole In The Wall has the look of a classic pub, with it's thatched rood it shows the history of a classic pub. The pub got it's name due to the fact that there was a hole in the back garden of the pub which adjoined to back of the old Garda Station, Gardaí would slip through the hole on the sly for a quick pint. Although the hole and the Garda station are gone the name lives on. When entering the pub you would think your gone back in time with it's flagstone floor and sturdy furniture. With it's good value drink The Hole in the Wall is a must visit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="map3">
+  <div class="fluid-container">
+    <div class="row no-gutters">
+      <div class="col-md">
+        <div class="menu-image h-100 d-flex align-items-start">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9543.211332553148!2d-9.0518984!3d53.2751523!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4eef5d8ee128e23c!2sHole%20in%20the%20Wall!5e0!3m2!1sen!2sie!4v1615809896551!5m2!1sen!2sie" width="545" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="menu-text flex-grow-1 py-4 px-5">
+          <h3 class="main-title text-left">How can I find The Hole In The Wall?</h3>
+          <hr class="hr-style-left" />
+          <div class="menu-content d-flex justify-content-between">
+            <p>Simply click directions on the map, this will bring you to Google Maps, from there all you need to do is follow the directions and you will be on your way to some classic pints in The Hole In The Wall.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mapchallenge">
+  <div class="fluid-container">
+    <div class="row no-gutters">
+      <div class="col-md">
+        <div class="menu-image h-100 d-flex align-items-start">
+		<iframe src="https://www.google.com/maps/d/embed?mid=1aH_1J7pBN180ucxfi_pEKmK206O1jD5h" width="545" height="300"></iframe>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="menu-text flex-grow-1 py-4 px-5">
+		<i class="ri-check-double-line"></i><h2 class="main-title text-left">Are you up for a challenge?</h2>
+          <hr class="hr-style-left" />
+          <div class="menu-content d-flex justify-content-between">
+            <p>There is no better way to say goodbye to the restrictions than doing a pub crawl to make up for all the months we've had to endure. On the map you will see that it contains what we think are the most popular pubs in Galway, the map has a start point at A and an end point. Start at An Púcán and crawl around to each pub at your own pace. We are not telling you to do every pub on the map in one day, just have some craic.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
     </section><!-- End Pubs Section -->
 
     <!-- ======= Clients Section ======= -->
@@ -141,118 +344,506 @@ var x = setInterval(function() {
 
         <div class="clients-slider swiper-container">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/pub/can.jpg" class="img-fluid" alt="can"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/connells.jpg" class="img-fluid" alt="pub2"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/the_skeff.jpg" class="img-fluid" alt="pub3"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/mcget.jpg" class="img-fluid" alt="pub4"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/hole.jpg" class="img-fluid" alt="pub5"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/cellar.jpg" class="img-fluid" alt="pub6"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/garavan.jpg" class="img-fluid" alt="pub7"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/taaffes.jpg" class="img-fluid" alt="pub8"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/king.jpg" class="img-fluid" alt="pub9"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/door.jpg" class="img-fluid" alt="pub10"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/busker.jpg" class="img-fluid" alt="pub11"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/quay.jpg" class="img-fluid" alt="pub12"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/1520.jpg" class="img-fluid" alt="pub13"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/monroe.jpg" class="img-fluid" alt="pub14"></div>
+            <div class="swiper-slide"><img src="assets/img/pub/bucket.jpg" class="img-fluid" alt="pub15"></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
+	 <br>
+		 <table class="center" style="width:85%" id ="status">
+		<td colspan="11" id="header2" style="color:#ffc451"><h1><b>Status of Pubs</h1></b></td>
+	  <tr>
+		<th style="color:#ffc451"><h3 style="font-size:25px;">Pub<br>(Click for more info)</h3></th>
+		<th style="color:#ffc451"><h3 style="font-size:25px;">Status</h3></th>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/anpucan/" target="_blank" style="color:white"><b>An Púcán</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/oconnellsbar/" target="_blank" style="color:white"><b>O'Connell's Bar</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/TheSkeff/" target="_blank" style="color:white"><b>The Skeff Bar</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/mcgettigansgalway/" target="_blank" style="color:white"><b>McGettigan's</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/barholeinthewall/" target="_blank" style="color:white"><b>The Hole In The Wall</a></td>
+		<td style="color:green"><b>Open for click and collect only</td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/thecellarbargalway/" target="_blank" style="color:white"><b>The Cellar Bar</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/GaravansBar/" target="_blank" style="color:white"><b>Garavan's Bar</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/TaaffesBarGalway/" target="_blank" style="color:white"><b>Taaffes Bar</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/thekingsheadgalway/" target="_blank" style="color:white"><b>The Kings Head</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/frontdoorpub/" target="_blank" style="color:white"><b>The Front Door Pub</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/buskerbrownesandkirbys/" target="_blank" style="color:white"><b>Busker Brownes</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/quaysgalway/" target="_blank" style="color:white"><b>The Quays Bar</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/1520bar/" target="_blank" style="color:white"><b>1520</a></td>
+		<td><span class="blink_text"><b>Closed</span></td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/monroesgalway/" target="_blank" style="color:white"><b>Monroe's Tavern</a></td>
+		<td style="color:green"><b>Open for takeaway Pints</td>
+	  </tr>
+	  <tr>
+		<td><a href="https://www.facebook.com/crustbucket/" target="_blank" style="color:white"><b>Crust Bucket</a></td>
+		<td><span class="blink_takeaway"><b>Takeaway only</span></td>
+	  </tr>
+	</table>
     </section><!-- End Clients Section -->
-
-    <!-- ======= Features Section ======= -->
+	
+	    <!-- ======= Features Section ======= -->
+	<section id="covid" class="d-flex align-items-center justify-content-center">
     <section id="features" class="features">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right"></div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-              <h4>Est labore ad</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <h4>Harum esse qui</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <h4>Aut occaecati</h4>
-              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <h4>Beatae veritatis</h4>
-              <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-            </div>
-          </div>
-        </div>
-
+	<div class ="level">
+		<marquee width="100%" direction="left" height="65px" bgcolor="red">
+		<h1><b>We are currently in Level 5 restrictions!</b></h1>
+		</marquee>
+	</div>
+	<br>
+		<h2><b>Covid-19 Updates!<b></h2>
+      <div class="framei" data-aos="fade-up">
+	<p align="center"><iframe class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FHealth.xml&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&linktarget=_blank&bordercol=%23000000&headbgcol=%23000000&headtxtcol=%23FFD700&titlebgcol=%23000000&titletxtcol=%23FFD700&itembgcol=%23000000&itemtxtcol=%23FFFFFF&ctl=0"></iframe><p align="center">
+	<p align="center"><iframe height="1" src="" frameBorder="0"></iframe></p>
       </div>
-    </section><!-- End Features Section -->
+    </section>
+	</section>
+	<!-- End Features Section -->
 
     <!-- ======= Deals Section ======= -->
     <section id="services" class="services">
+	
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Deals</h2>
           <p>Check our Deals</p>
         </div>
-
+		<div id="Hole_In_Wall">
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+		<div><img src="assets/img/deals/wall.gif" class="img-fluid"></div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/bud.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/bud.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/bud.jpg" target="_blank">2x Bottles of Budwiser</a>
+                </h4>
+                <h5 id="cost">&euro;5.00</h5>
+                <p class="card-text">Enjoy two cool crisp bottle's of Budwiser for only €5!<p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/wall_menu.png'); newWindow.print();">More from the Hole in the Wall</button>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/corona.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/corona.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/corona.jpg" target="_blank">3x Bottles of Corona</a>
+                </h4>
+                <h5 id="cost">&euro;10.00</h5>
+                <p class="card-text">Enjoy some Corona safely with our 3 for 10 deal!</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/wall_menu.png'); newWindow.print();">More from the Hole in the Wall</button>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/orch.jpg target="_blank"><img class="card-img-top" src="assets/img/drinks/orch.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/orch.jpg" target="_blank">2x Orchard Thieves</a>
+                </h4>
+                <h5 id="cost">&euro;5.00</h5>
+                <p class="card-text">Enjoy this refreshing cider with 2 bottles for only €5!</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/wall_menu.png'); newWindow.print();">More from the Hole in the Wall</button>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
-
         </div>
+		</div>
+		
+
+		<div id="The-Skeff">
+        <div class="row">
+		<div><img src="assets/img/deals/skeff.gif" class="img-fluid"></div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/ps_cocktail.png" target="_blank"><img class="card-img-top" src="assets/img/drinks/ps_cocktail.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/ps_cocktail.png" target="_blank">Pornstar Martini</a>
+                </h4>
+                <h5 id="cost">&euro;10.00</h5>
+                <p class="card-text">The porn star martini is a cold, passion fruit-flavoured cocktail made with vanilla-flavoured vodka, Passoã, passion fruit juice, and lime juice. It is traditionally accompanied by a chilled shot glass of prosecco.</p>
+              </div>
+              <div class="card-footer">
+			  <button class="btn btn-success" id="dbutton" onclick=" window.open('https://www.theskeff.ie/skeff-cocktails-galway/','_blank')">More from the Skeff</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/expresso_cocktail.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/expresso_cocktail.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/expresso_cocktail.jpg" target="_blank">Expresso Martini</a>
+                </h4>
+                <h5 id="cost">&euro;10.00</h5>
+                <p class="card-text">The espresso martini is a cold, coffee-flavored cocktail made with vodka, espresso coffee, coffee liqueur, and sugar syrup. This cocktail is perfect to keep yourslef energised throughout the day.</p>
+              </div>
+              <div class="card-footer">
+			  <button class="btn btn-success" id="dbutton" onclick=" window.open('https://www.theskeff.ie/skeff-cocktails-galway/','_blank')">More from the Skeff</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/whiskey-cocktail.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/whiskey-cocktail.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/whiskey-cocktail.jpg" target="_blank">Whiskey Sour</a>
+                </h4>
+                <h5 id="cost">&euro;10.00</h5>
+                <p class="card-text">The whiskey sour is a mixed drink containing whiskey, lemon juice, sugar, and optionally, a dash of egg white or cocktails foamer. With the egg white, it is sometimes called a Boston Sour. Enjoy it for only €10.</p>
+              </div>
+              <div class="card-footer">
+			  <button class="btn btn-success" id="dbutton" onclick=" window.open('https://www.theskeff.ie/skeff-cocktails-galway/','_blank')">More from the Skeff</button>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+		
+		<div id="McGets">
+        <div class="row">
+		<div><img src="assets/img/deals/mcgettigans.gif" class="img-fluid"></div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/pint_carlsberg.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/pint_carlsberg.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/pint_carlsberg.jpg" target="_blank">Pint of Carlsberg</a>
+                </h4>
+                <h5 id="cost">&euro;5.30</h5>
+                <p class="card-text">Probably the best beer in the world!</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/McGets-Drinks-Menu.pdf'); newWindow.print();">More from McGettigan's</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/pint_guinness.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/pint_guinness.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/pint_guinness.jpg" target="_blank">Pint of Guinness</a>
+                </h4>
+                <h5 id="cost">&euro;4.65</h5>
+                <p class="card-text">Guinness is good for you!</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/McGets-Drinks-Menu.pdf'); newWindow.print();">More from McGettigan's</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/pint_heineken.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/pint_heineken.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/pint_heineken.jpg" target="_blank">Pint of Heineken</a>
+                </h4>
+                <h5 id="cost">&euro;5.30</h5>
+                <p class="card-text">Heineken Refreshes the parts other beers cannot reach</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/McGets-Drinks-Menu.pdf'); newWindow.print();">More from McGettigan's</button>			  
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+		
+		<div id="Front-Door">
+        <div class="row">
+		<div><img src="assets/img/deals/front_door.gif" class="img-fluid"></div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/morning-mojito.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/morning-mojito.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/morning-mojito.jpg" target="_blank">Morning Mojito</a>
+                </h4>
+                <h5 id="cost">&euro;8.95</h5>
+                <p class="card-text">The Morning Mojito cocktail is a very popular, rum-based alcoholic mixed drink. Very tasty, refreshing, and delicious</p>
+              </div>
+              <div class="card-footer">
+			  <button class="btn btn-success" id="dbutton" onclick=" window.open('https://www.frontdoorpub.com/all-menus/','_blank')">More from the Front Door</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/margarita-cocktail.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/margarita-cocktail.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/margarita-cocktail.jpg" target="_blank">Margarita</a>
+                </h4>
+                <h5 id="cost">&euro;10.00</h5>
+                <p class="card-text">A margarita is a cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass.</p>
+              </div>
+              <div class="card-footer">
+			  <button class="btn btn-success" id="dbutton" onclick=" window.open('https://www.frontdoorpub.com/all-menus/','_blank')">More from the Front Door</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/caipirinha.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/caipirinha.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/caipirinha.jpg" target="_blank">Caipirinha </a>
+                </h4>
+                <h5 id="cost">&euro;10.00</h5>
+                <p class="card-text">Caipirinha is Brazil's national cocktail, made with cachaça, sugar, and lime.</p>
+              </div>
+              <div class="card-footer">
+			  <button class="btn btn-success" id="dbutton" onclick=" window.open('https://www.frontdoorpub.com/all-menus/','_blank')">More from the Front Door</button>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+		
+		<div id="Buskers">
+        <div class="row">
+		<div><img src="assets/img/deals/buskers.gif" class="img-fluid"></div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/deal_cocktail.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/deal_cocktail.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/deal_cocktail.jpg" target="_blank">Any 2 Cocktails</a>
+                </h4>
+                <h5 id="cost">&euro;15.00</h5>
+                <p class="card-text">Get our unique deal and get any 2 Cocktails for &euro;15</p>
+              </div>
+              <div class="card-footer">
+			  <button class="btn btn-success" id="dbutton" onclick=" window.open('https://www.buskerbrownes.com/drinks','_blank')">More from Buskers</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/mai-tai.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/mai-tai.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/mai-tai.jpg" target="_blank">Mai Tai</a>
+                </h4>
+                <h5 id="cost">&euro;9.50</h5>
+                <p class="card-text">The Mai Tai is a cocktail based on rum, Curaçao liqueur, orgeat syrup, and lime juice.</p>
+              </div>
+              <div class="card-footer">
+			  <button class="btn btn-success" id="dbutton" onclick=" window.open('https://www.buskerbrownes.com/drinks','_blank')">More from Buskers</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/sotb.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/sotb.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/sotb.jpg" target="_blank">Sex on the Beach</a>
+                </h4>
+                <h5 id="cost">&euro;9.50</h5>
+                <p class="card-text">A Sex on the Beach is an alcoholic cocktail containing vodka, peach schnapps, orange juice and cranberry juice.</p>
+              </div>
+              <div class="card-footer">
+			  <button class="btn btn-success" id="dbutton" onclick=" window.open('https://www.buskerbrownes.com/drinks','_blank')">More from Buskers</button>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+		
+		<div id="/1520">
+        <div class="row">
+		<div><img src="assets/img/deals/1520.gif" class="img-fluid"></div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/rhubarb-pie-cocktail.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/rhubarb-pie-cocktail.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/rhubarb-pie-cocktail.jpg" target="_blank">Rhubarb Pie Cocktail</a>
+                </h4>
+                <h5 id="cost">&euro;11.00</h5>
+                <p class="card-text">Rhubarb season is short and this refreshing rhubarb vodka cocktail shouldn’t be missed!</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/1520-Cocktail-Menu.pdf'); newWindow.print();">More from 1520</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/irish-mule.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/irish-mule.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/irish-mule.jpg" target="_blank">Smoked Irish-Mule</a>
+                </h4>
+                <h5 id="cost">&euro;11.00</h5>
+                <p class="card-text">The Irish Mule is a refreshing cocktail made with ginger beer, lime juice and whiskey.</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/1520-Cocktail-Menu.pdf'); newWindow.print();">More from 1520</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/boozy-iced-tea.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/boozy-iced-tea.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/boozy-iced-tea.jpg" target="_blank">Boozy Ice Tea</a>
+                </h4>
+                <h5 id="cost">&euro;11.00</h5>
+                <p class="card-text">Made with peach schnapps this is a real summertime treat. Enjoy a cold refreshing iced tea with a kick.</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/1520-Cocktail-Menu.pdf'); newWindow.print();">More from 1520</button>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+		
+		<div id="Monroes">
+        <div class="row">
+		<div><img src="assets/img/deals/monroes.gif" class="img-fluid"></div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/chocolate-orange-margarita.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/chocolate-orange-margarita.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/chocolate-orange-margarita.jpg" target="_blank">Chocolate Orange Margarita</a>
+                </h4>
+                <h5 id="cost">&euro;8.50</h5>
+                <p class="card-text">This is a beautifully indulgent and elegant Mexican cointreau drink.</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/monroes_menu.png'); newWindow.print();">More from Monroe's</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/daiquiri-cocktail.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/daiquiri-cocktail.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/daiquiri-cocktail.jpg" target="_blank">Daiquiri</a>
+                </h4>
+                <h5 id="cost">&euro;8.50</h5>
+                <p class="card-text">The daiquiri is one of the six basic drinks listed in David A. Embury's classic The Fine Art of Mixing Drinks</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/monroes_menu.png'); newWindow.print();">More from Monroe's</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="assets/img/drinks/caipirinha-berry.jpg" target="_blank"><img class="card-img-top" src="assets/img/drinks/caipirinha-berry.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="assets/img/drinks/caipirinha-berry.jpg" target="_blank">Berry Caipirinha</a>
+                </h4>
+                <h5 id="cost">&euro;8.50</h5>
+                <p class="card-text">A fruity version of the popular Caipirinha, bringing together wonderful sweet and berry flavours</p>
+              </div>
+              <div class="card-footer">
+				<button class="btn btn-success" id="dbutton" onClick="newWindow = window.open('assets/img/menu/monroes_menu.png'); newWindow.print();">More from Monroe's</button>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
 
       </div>
+	  </div>
     </section><!-- End Deals Section -->
 
    
 
         </div>
 
-	<footer>
+	<footer id="drinkaware">
+	<p><b>Drink Responsibly!</b><br>
+	<a id="dlink" onClick="newWindow = window.open('https://www.drinkaware.ie/#:~:text=Reduce%20your%20risk%2C%20reduce%20your%20drinking');">DrinkAware.ie</a></p>
   </footer>
 
   <div id="preloader"></div>
@@ -269,7 +860,42 @@ var x = setInterval(function() {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+ <script src="js/addtohomescreen.min.js" type="application/javascript"></script>
+ <script src="js/addtohomescreen.js"></script>
+    <script>
+        addToHomescreen( {
+            appID: "ml.thecountdown",
+            appName: "The Countdown",
+            lifespan: 15,
+	startDelay:0,
+            autostart: true,
+            skipFirstVisit: true,
+            minSessions: 1,
+            displayPace: 0,
+            customPrompt: {
+                title: "Install Thecountdown?",
+                src: "meta/favicon-96x96.png",
+                cancelMsg: "Cancel",
+                installMsg: "Install"
+            }
+        } );
+    </script>
+    <script>
+        if ( "serviceWorker" in navigator ) {
 
+            navigator.serviceWorker.register( "/sw.js" )
+                .then( function ( registration ) { // Registration was successful
+
+                    console.log( "ServiceWorker registration successful with scope: ", registration.scope );
+
+                } ).catch( function ( err ) { // registration failed :(
+
+                    console.log( "ServiceWorker registration failed: ", err );
+
+                } );
+
+        }
+    </script>
 </body>
 
 </html>
